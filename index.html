@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <div class="tela">
+                <div id="visor"></div>
+            </div>
+            <div class="buttons">
+                <!-- Table; td -> table data; tr -> table row-->
+                <table>
+                    <tr>
+                        <td><button class="bt-operador" id="limpar">C</button></td>
+                        <td><button class="bt-operador" id="*">&times</button></td>
+                        <td><button class="bt-operador" id="/">&divide</button></td>
+                        <td><button style="font-size:1px" class="bt-operador" id="remover"><i class="material-icons">backspace</i></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="bt-numero" id="7">7</button></td>
+                        <td><button class="bt-numero" id="8">8</button></td>
+                        <td><button class="bt-numero" id="9">9</button></td>
+                        <td><button class="bt-operador" id="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="bt-numero" id="4">4</button></td>
+                        <td><button class="bt-numero" id="5">5</button></td>
+                        <td><button class="bt-numero" id="6">6</button></td>
+                        <td><button class="bt-operador" id="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="bt-numero" id="1">1</button></td>
+                        <td><button class="bt-numero" id="2">2</button></td>
+                        <td><button class="bt-numero" id="3">3</button></td>
+                        <td rowspan="2"><button class="bt-igual" id="igual">=</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="bt-operador" id="/100">&percnt;</button></td>
+                        <td><button class="bt-numero" id="0">0</button></td>
+                        <td><button class="bt-expo" id=".">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+    --button-color: #7469E6;
+    --visor-color: #7a76af;
+    --button-p-color: #5750aa;
+    --calculadora-background: #1C1A33;
+    --background: #575666;
+    --text-color: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.calculadora {
+    padding: 15px;
+    background: var(--calculadora-background);
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    box-shadow: 0 0 20px black;
+}
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--button-color);
+    cursor: pointer;
+    border: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 20px #11101f;
+}
+button:hover {
+    background: var(--button-p-color);
+    color: #a8a8a8;
+    scale: 1.1;
+}
+button#igual {
+    border-radius: 20px;
+    height: 130px;
+}
+#visor {
+    text-indent: 2px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    height: 100px;
+    max-width: 270px;
+    font-size: 40px;
+    color: var(--text-color);
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    overflow-x: scroll;
+}
+#visor::-webkit-scrollbar {
+    display: block;
+    height: 10px;
+}
+.tela {
+    background: var(--visor-color);
+    border-radius: 30px;
+}
